@@ -1,11 +1,11 @@
-.cap { color: var(--ink); background: var(--white); }
+.cap { color: var(--ink); background: var(--warm); }
 .cap h1, .cap h2, .cap h3, .cap p, .cap figure, .cap dl, .cap dd { margin: 0; }
 .cap h1, .cap h2, .cap h3 { font-family: var(--sans); text-wrap: balance; }
 .cap h1 { font-size: clamp(3.25rem, 6.5vw, 6rem); font-weight: 520; line-height: 1.02; letter-spacing: -.065em; }
 .cap h2 { font-size: clamp(2rem, 3.4vw, 3.2rem); font-weight: 520; line-height: 1.1; letter-spacing: -.055em; }
 .cap h3 { font-size: clamp(1.25rem, 1.8vw, 1.6rem); font-weight: 550; line-height: 1.25; letter-spacing: -.035em; }
 .cap p, .cap dd { color: var(--muted); line-height: 1.65; }
-.cap .cap-intro { background: var(--paper); }
+.cap .cap-intro { background: #f0f6ff; }
 .cap .cap-crumb { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; padding-top: 1.7rem; color: var(--muted); font-size: .875rem; }
 .cap-crumb a { color: inherit; text-decoration: none; }
 .cap-crumb a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: .25em; }
@@ -20,14 +20,14 @@
 .cap-hero figure { min-width: 0; }
 .cap-hero img, .design-visual svg { display: block; width: 100%; height: auto; border-radius: 1.4rem; }
 .design-visual svg { border: 1px solid var(--line); }
-.cap-hero img { aspect-ratio: 1.18; object-fit: cover; background: #e7e9eb; }
+.cap-hero img { aspect-ratio: 1.18; object-fit: cover; background: #e9f1fc; }
 .cap figcaption { margin-top: .85rem; padding-inline: .15rem; color: var(--muted); font-size: .8125rem; line-height: 1.5; }
 .cap-service-nav { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; padding-block: 0 1.6rem; }
-.cap-service-nav a { display: inline-flex; align-items: center; min-height: 2.5rem; padding: .55rem 1rem; border: 1px solid #dfe2e5; border-radius: 999px; background: #ffffff70; font-size: .875rem; line-height: 1.3; text-decoration: none; color: var(--muted); transition: background .2s, color .2s, border-color .2s; }
-.cap-service-nav a:hover { border-color: #a9b0b6; color: var(--ink); background: #fff; }
-.cap-service-nav a[aria-current=page] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.cap-service-nav a { display: inline-flex; align-items: center; min-height: 2.5rem; padding: .55rem 1rem; border: 1px solid #cbdcf2; border-radius: 999px; background: #ffffff70; font-size: .875rem; line-height: 1.3; text-decoration: none; color: var(--muted); transition: background .2s, color .2s, border-color .2s; }
+.cap-service-nav a:hover { border-color: var(--blue); color: var(--blue); background: #fff; }
+.cap-service-nav a[aria-current=page] { background: var(--blue); border-color: var(--blue); color: #fff; }
 .cap-intent { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.5rem, 4vw, 4.5rem); padding-block: clamp(2rem, 4vw, 3.7rem); border-bottom: 1px solid var(--line); }
-.cap-intent div { padding-left: 1.15rem; border-left: 1px solid #b9c3cc; }
+.cap-intent div { padding-left: 1.15rem; border-left: 2px solid #9ac1ff; }
 .cap .cap-intent h2 { font-size: 1.15rem; font-weight: 550; letter-spacing: -.025em; }
 .cap .cap-intent p { margin-top: .5rem; font-size: .95rem; line-height: 1.6; }
 .cap-work { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, .9fr); align-items: start; gap: clamp(2.5rem, 7vw, 7.5rem); padding-block: clamp(4rem, 7vw, 7.5rem); scroll-margin-top: 6rem; }
@@ -37,14 +37,14 @@
 .cap-specs dt { font-weight: 550; line-height: 1.55; }
 .cap-specs dd { font-size: .97rem; }
 .cap-specs dd a { color: var(--blue); text-underline-offset: .2em; }
-.cap .cap-example { padding: clamp(1.6rem, 3.2vw, 3rem); color: #fff; background: #1d2023; border-radius: 1.5rem; }
-.cap .cap-example h3 { color: #fff; font-size: clamp(1.5rem, 2vw, 1.9rem); }
-.cap .cap-example > p { margin-top: 1rem; color: #c0c6cb; font-size: .95rem; }
-.cap .cap-example dl { margin-top: 1.8rem; padding-top: .3rem; border-top: 1px solid #464b50; }
+.cap .cap-example { padding: clamp(1.6rem, 3.2vw, 3rem); color: var(--ink); background: #eaf3ff; border: 1px solid #d3e4fd; border-radius: 1.5rem; }
+.cap .cap-example h3 { color: #174e9c; font-size: clamp(1.5rem, 2vw, 1.9rem); }
+.cap .cap-example > p { margin-top: 1rem; color: var(--muted); font-size: .95rem; }
+.cap .cap-example dl { margin-top: 1.8rem; padding-top: .3rem; border-top: 1px solid #c8dcf5; }
 .cap-example dl > div { padding-top: 1.3rem; }
-.cap .cap-example dt { color: #aebdc9; font-family: var(--sans); font-size: .875rem; font-weight: 500; }
-.cap .cap-example dd { margin-top: .35rem; color: #f0f2f3; font-size: .95rem; }
-.cap-connect { background: var(--paper); }
+.cap .cap-example dt { color: #165bbd; font-family: var(--sans); font-size: .875rem; font-weight: 500; }
+.cap .cap-example dd { margin-top: .35rem; color: var(--ink); font-size: .95rem; }
+.cap-connect { background: #fff2e7; }
 .cap-connect-inner { display: grid; grid-template-columns: 1fr 1fr; align-items: start; gap: clamp(2rem, 7vw, 8rem); padding-block: clamp(3.5rem, 6vw, 6rem); }
 .cap-connect p { max-width: 42rem; }
 .cap a:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
@@ -52,7 +52,7 @@
 .cap-files th, .cap-files td { padding: 1.35rem 1rem 1.35rem 0; border-top: 1px solid var(--line); vertical-align: top; }
 .cap-files td { color: var(--muted); line-height: 1.65; }
 .cap .cap-files th { font-size: 1rem; font-weight: 550; white-space: nowrap; }
-.cap .cap-limits { padding: 1.2rem 1.3rem; background: var(--paper); border-radius: .8rem; font-size: .9375rem; }
+.cap .cap-limits { padding: 1.2rem 1.3rem; background: #fff2e7; border-radius: .8rem; font-size: .9375rem; }
 @media (max-width: 1000px) {
   .cap-hero { gap: 2rem; }
   .cap h1 { font-size: clamp(3rem, 6.2vw, 5rem); }
