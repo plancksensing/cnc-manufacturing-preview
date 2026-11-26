@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; object-src 'none'; connect-src 'none'; form-action 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/cnc-manufacturing-preview/preview.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prepare CAD models, dimensioned drawings and print artwork for a multi-process quotation.">
+  <title>Drawing guide | FORMARDEN</title>
+  <link rel="stylesheet" href="/cnc-manufacturing-preview/site.css">
+  <link rel="stylesheet" href="/cnc-manufacturing-preview/capability.css">
+  <script defer src="/cnc-manufacturing-preview/nav.js"></script>
+  <link rel="icon" type="image/webp" href="/cnc-manufacturing-preview/assets/formarden-mark.webp">
+</head>
+<body>
+  <aside class="preview-banner" aria-label="Preview status">Internal design preview — not accepting orders</aside>
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap site-header__bar">
+    <a class="wordmark" href="/cnc-manufacturing-preview/" aria-label="Formarden home">
+      <img class="wordmark__symbol" src="/cnc-manufacturing-preview/assets/formarden-mark.webp" width="48" height="48" alt="">
+      <span class="wordmark__type"><strong>FORMARDEN</strong><small>Design &amp; Manufacturing</small></span>
+    </a>
+    <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" hidden><span>Menu</span><span class="nav-toggle__icon" aria-hidden="true"></span></button>
+    <nav id="primary-menu" class="site-nav" aria-label="Primary">
+      <details class="cap-menu">
+        <summary>Capabilities<span class="chevron" aria-hidden="true"></span></summary>
+        <div class="cap-menu__links">
+          <a href="/cnc-manufacturing-preview/#capabilities">All capabilities</a>
+          <a href="/cnc-manufacturing-preview/capabilities/design/">Design support</a>
+          <a href="/cnc-manufacturing-preview/capabilities/machining/">CNC machining</a>
+          <a href="/cnc-manufacturing-preview/capabilities/finishing/">Surface finishing</a>
+          <a href="/cnc-manufacturing-preview/capabilities/printing/">On-part printing</a>
+        </div>
+      </details>
+      <a href="/cnc-manufacturing-preview/project-review/">Project review</a>
+      <a href="/cnc-manufacturing-preview/drawing-guide/">Drawing guide</a>
+      <a class="button button--dark nav-quote" href="/cnc-manufacturing-preview/quote/">Request a quote</a>
+    </nav>
+  </div>
+</header>
+
+  <main id="main" class="cap">
+    <section class="cap-intro" aria-labelledby="page-title">
+      <div class="wrap">
+        <nav class="cap-crumb" aria-label="Breadcrumb"><a href="/cnc-manufacturing-preview/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Drawing guide</span></nav>
+        <div class="cap-hero">
+          <div class="cap-hero-copy">
+            <h1 id="page-title">Drawing guide</h1>
+            <p>Share the files that describe your product and the quantity you need. If you are still developing the idea, a sketch or written brief is a useful starting point.</p>
+            <div class="cap-actions">
+              <a class="button button--dark" href="/cnc-manufacturing-preview/quote/">Start a quote</a>
+              <a class="cap-text-link" href="#accepted-files">Accepted files</a>
+            </div>
+          </div>
+          <figure>
+            <img src="/cnc-manufacturing-preview/assets/faceplate.webp" width="1200" height="800" alt="Bare, black-finished and printed versions of a control panel" fetchpriority="high">
+            <figcaption>Illustrative rendering of one panel from machining to print.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="accepted-files" class="wrap cap-work" aria-labelledby="files-title">
+        <div>
+          <h2 id="files-title">Prepare your files</h2>
+          <table class="cap-files">
+            <thead><tr><th scope="col">File type</th><th scope="col">What to include</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">3D model</th><td>STEP / STP or IGES / IGS for part geometry. STL is also accepted. Provide units with mesh files.</td></tr>
+              <tr><th scope="row">Drawing</th><td>PDF for dimensioned views and process notes. DXF or DWG can also describe flat profiles. Show units, revision and critical features.</td></tr>
+              <tr><th scope="row">Artwork</th><td>AI, EPS, SVG or PDF for vector artwork. Include target size, color references and placement on the part.</td></tr>
+              <tr><th scope="row">Visual reference</th><td>PNG, JPG or JPEG for a marked-up view, existing sample or finish reference. Include dimensions separately.</td></tr>
+            </tbody>
+          </table>
+          <p class="cap-limits">Attach up to six files. Each file can be up to 10 MiB, with a combined limit of 20 MiB. For a larger package, describe it in your request and arrange a transfer with the team.</p>
+        </div>
+        <aside class="cap-example">
+          <h3>Example file set</h3>
+          <p>For a front panel with a machined opening, black finish and white graphics, use a consistent part number and revision.</p>
+          <dl>
+            <div><dt>FP-17_RevB.step</dt><dd>Finished part geometry.</dd></div>
+            <div><dt>FP-17_RevB.pdf</dt><dd>Dimensions, fit, surface finish, masking and print location.</dd></div>
+            <div><dt>FP-17_RevB.ai</dt><dd>One-color print artwork at finished size.</dd></div>
+          </dl>
+        </aside>
+    </section>
+    <section class="cap-connect">
+      <div class="wrap cap-connect-inner">
+        <h2>No finished drawing yet?</h2>
+        <div><p>Describe the function, key dimensions and any components your product needs to fit. Select design support in your request and share a sketch or reference image if you have one. Files are optional.</p>
+          <div class="cap-actions">
+            <a class="button button--dark" href="/cnc-manufacturing-preview/quote/">Request a quote</a>
+            <a class="cap-text-link" href="/cnc-manufacturing-preview/capabilities/design/">Explore design support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+  <div class="wrap footer__inner">
+    <div class="footer__identity">
+      <a class="wordmark" href="/cnc-manufacturing-preview/" aria-label="Formarden home">
+        <img class="wordmark__symbol" src="/cnc-manufacturing-preview/assets/formarden-mark.webp" width="48" height="48" alt="">
+        <span class="wordmark__type"><strong>FORMARDEN</strong><small>Design &amp; Manufacturing</small></span>
+      </a>
+      <p>From idea to finished product.<br>Kunshan, Jiangsu, China</p>
+    </div>
+    <nav class="footer__group" aria-label="Manufacturing capabilities">
+      <strong>Capabilities</strong>
+      <a href="/cnc-manufacturing-preview/capabilities/design/">Design support</a>
+      <a href="/cnc-manufacturing-preview/capabilities/machining/">CNC machining</a>
+      <a href="/cnc-manufacturing-preview/capabilities/finishing/">Surface finishing</a>
+      <a href="/cnc-manufacturing-preview/capabilities/printing/">On-part printing</a>
+    </nav>
+    <nav class="footer__group" aria-label="Project resources">
+      <strong>Project resources</strong>
+      <a href="/cnc-manufacturing-preview/#ordering">How it works</a>
+      <a href="/cnc-manufacturing-preview/project-review/">Project review</a>
+      <a href="/cnc-manufacturing-preview/drawing-guide/">Drawing guide</a>
+      <a href="/cnc-manufacturing-preview/quote/">Request a quote</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+
+.preview-banner { padding: .46rem 1rem; background: #112548; color: #fff; text-align: center; font: 550 .875rem/1.45 Inter, system-ui, sans-serif; }
+.quote-drop label, .quote-browse, #inquiry :disabled, #inquiry .quote-choices label { cursor: default; }
+#inquiry :is(input, select, textarea):disabled { background-color: #f5f7fa; color: #52627b; opacity: 1; }
+.preview-error { padding-block: 5rem; }
+.preview-error a { display: inline-flex; margin-top: 1.25rem; }

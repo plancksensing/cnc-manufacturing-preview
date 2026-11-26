@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; object-src 'none'; connect-src 'none'; form-action 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/cnc-manufacturing-preview/preview.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get a quote from FORMARDEN for product design, CNC machining, finishing and on-part printing. Start with an idea, a sketch or a production drawing.">
+  <title>Request a quote | FORMARDEN Design &amp; Manufacturing</title>
+  <link rel="stylesheet" href="/cnc-manufacturing-preview/site.css">
+  <link rel="stylesheet" href="/cnc-manufacturing-preview/quote.css">
+  <script src="/cnc-manufacturing-preview/nav.js" defer></script>
+  
+  <link rel="icon" type="image/webp" href="/cnc-manufacturing-preview/assets/formarden-mark.webp">
+</head>
+<body>
+  <aside class="preview-banner" aria-label="Preview status">Internal design preview — not accepting orders</aside>
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap site-header__bar">
+    <a class="wordmark" href="/cnc-manufacturing-preview/" aria-label="Formarden home">
+      <img class="wordmark__symbol" src="/cnc-manufacturing-preview/assets/formarden-mark.webp" width="48" height="48" alt="">
+      <span class="wordmark__type"><strong>FORMARDEN</strong><small>Design &amp; Manufacturing</small></span>
+    </a>
+    <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" hidden><span>Menu</span><span class="nav-toggle__icon" aria-hidden="true"></span></button>
+    <nav id="primary-menu" class="site-nav" aria-label="Primary">
+      <details class="cap-menu">
+        <summary>Capabilities<span class="chevron" aria-hidden="true"></span></summary>
+        <div class="cap-menu__links">
+          <a href="/cnc-manufacturing-preview/#capabilities">All capabilities</a>
+          <a href="/cnc-manufacturing-preview/capabilities/design/">Design support</a>
+          <a href="/cnc-manufacturing-preview/capabilities/machining/">CNC machining</a>
+          <a href="/cnc-manufacturing-preview/capabilities/finishing/">Surface finishing</a>
+          <a href="/cnc-manufacturing-preview/capabilities/printing/">On-part printing</a>
+        </div>
+      </details>
+      <a href="/cnc-manufacturing-preview/project-review/">Project review</a>
+      <a href="/cnc-manufacturing-preview/drawing-guide/">Drawing guide</a>
+      <a class="button button--dark nav-quote" href="/cnc-manufacturing-preview/quote/">Request a quote</a>
+    </nav>
+  </div>
+</header>
+
+  <main id="main" class="quote-page">
+    <section class="quote-intro" aria-labelledby="quote-title">
+      <div class="wrap">
+        <h1 id="quote-title">Request a quote</h1>
+        <p>Review the proposed inquiry form below. Uploads and customer submissions are disabled for this preview.</p>
+      </div>
+    </section>
+    <div class="wrap quote-layout">
+      <section id="inquiry" aria-labelledby="quote-title">
+        
+        <fieldset disabled class="quote-box">
+          <legend><span>Sketches, drawings &amp; artwork</span> <small>Optional</small></legend>
+          <div id="drop-zone" class="quote-drop">
+            
+            <label>
+              <span class="quote-file-icon" aria-hidden="true"></span>
+              <strong id="drop-label">Project file upload</strong>
+              <span class="quote-browse">Browse files</span>
+            </label>
+          </div>
+          <p id="file-help" class="quote-help">Up to 6 files · 10 MiB each · 20 MiB total</p>
+          <details class="quote-formats"><summary>Supported file formats</summary>
+            <p>For CAD files, use STEP/STP, IGES/IGS, DXF, DWG or STL. For drawings and artwork, use PDF, AI, EPS, SVG, PNG or JPG/JPEG.</p>
+          </details>
+          <ul id="file-list" class="quote-file-list" aria-label="Files selected for this inquiry"></ul>
+          <p id="attachment-status" class="quote-sr" role="status"></p>
+          <div id="file-problem" class="quote-file-problem" hidden>
+            <p id="file-error" role="alert"></p>
+            <button disabled type="button" class="quote-text-action" id="keep-files">Keep current selection</button>
+          </div>
+        </fieldset>
+
+        <fieldset disabled class="quote-box">
+          <legend><span>Project details</span></legend>
+          <div class="quote-grid">
+            <div class="quote-field quote-part"><label for="part">Project name or drawing number</label>
+              <input disabled id="part" name="part" maxlength="250" placeholder="e.g. Handheld sensor enclosure" required></div>
+            <div class="quote-field"><label for="quantity">Estimated quantity (pieces)</label>
+              <input disabled id="quantity" name="quantity" type="text" inputmode="numeric" pattern="0*[1-9][0-9]*" maxlength="16" title="Enter a positive whole number." placeholder="e.g. 250" required></div>
+            <div class="quote-field quote-wide"><label for="notes">Project brief <small>Optional</small></label>
+              <textarea disabled id="notes" name="notes" rows="3" maxlength="8000" placeholder="What will the product do? Include approximate dimensions, design questions or production requirements."></textarea></div>
+          </div>
+          <div class="quote-processes" role="group" aria-labelledby="process-label" aria-describedby="process-help">
+            <p class="quote-label" id="process-label">Services for this project</p>
+            <p class="quote-help" id="process-help">Select one or more.</p>
+            <div class="quote-choices">
+              <label><input disabled type="checkbox" name="processes" value="design"> Design support</label>
+              <label><input disabled type="checkbox" name="processes" value="machining"> CNC machining</label>
+              <label><input disabled type="checkbox" name="processes" value="finishing"> Surface finishing</label>
+              <label><input disabled type="checkbox" name="processes" value="printing"> On-part printing</label>
+            </div>
+          </div>
+          <details class="quote-specs">
+            <summary>Material, finish &amp; print specifications <small>Optional</small></summary>
+            <div class="quote-grid">
+              <div class="quote-field"><label for="material">Material and grade</label>
+                <input disabled id="material" name="material" maxlength="500" placeholder="e.g. Aluminum 6061-T6"></div>
+              <div class="quote-field"><label for="units">Drawing units</label>
+                <select disabled id="units" name="units"><option value="drawing">As shown on drawing</option><option value="mm">Millimeters (mm)</option><option value="in">Inches (in)</option></select></div>
+              <div class="quote-field"><label for="finish">Surface finish</label>
+                <input disabled id="finish" name="finish" maxlength="500" placeholder="e.g. Matte black, mask threads"></div>
+              <div class="quote-field"><label for="printing">Print specifications</label>
+                <input disabled id="printing" name="printing" maxlength="500" placeholder="e.g. White scale on front face"></div>
+            </div>
+          </details>
+        </fieldset>
+
+        <fieldset disabled class="quote-box">
+          <legend><span>Contact &amp; delivery</span></legend>
+          <div class="quote-grid">
+            <div class="quote-field"><label for="contact-name">Your name</label>
+              <input disabled id="contact-name" name="name" autocomplete="name" maxlength="180" required></div>
+            <div class="quote-field"><label for="contact-email">Work email</label>
+              <input disabled id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+            <div class="quote-field quote-wide"><label for="company">Company <small>Optional</small></label>
+              <input disabled id="company" name="company" autocomplete="organization" maxlength="250"></div>
+            <div class="quote-field"><label for="destination">Ship-to city and country</label>
+              <input disabled id="destination" name="destination" maxlength="250" placeholder="e.g. Munich, Germany" required></div>
+            <div class="quote-field"><label for="requested-date">Desired arrival date <small>Optional</small></label>
+              <input disabled id="requested-date" name="desiredDate" type="date"></div>
+          </div>
+        </fieldset>
+        <div class="quote-submit">
+          <button class="button" type="button" id="send" disabled>Submissions disabled</button>
+          <p id="feedback" role="status"></p><progress id="upload-progress" max="100" aria-label="Upload progress" hidden></progress>
+          <p id="request-error" role="alert"></p>
+        </div>
+      </section>
+      
+      <aside class="quote-guide" aria-label="Quotation guidance">
+        <div>
+          <h2>What to include</h2>
+          <dl>
+            <dt>Design support</dt><dd>Describe the intended use, approximate size and how the product fits with other parts. A rough sketch or reference photo can help.</dd>
+            <dt>Machining</dt><dd>Pair the CAD model with a drawing showing critical dimensions and tolerances.</dd>
+            <dt>Surface finishing</dt><dd>Call out the treatment, color and any areas to mask.</dd>
+            <dt>On-part printing</dt><dd>Include the artwork, print dimensions and its position on the part.</dd>
+          </dl>
+          <a class="text-link quote-guide-link" href="/cnc-manufacturing-preview/drawing-guide/">View the drawing guide</a>
+        </div>
+        <div class="quote-next">
+          <h2>Planned quotation process</h2>
+          <p>You’ll receive an inquiry reference. We’ll review the job and email you with questions or a quotation covering price and proposed lead time.</p>
+          <p>Once you approve the quotation, our Hong Kong company issues an invoice with payment instructions.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+  <div class="wrap footer__inner">
+    <div class="footer__identity">
+      <a class="wordmark" href="/cnc-manufacturing-preview/" aria-label="Formarden home">
+        <img class="wordmark__symbol" src="/cnc-manufacturing-preview/assets/formarden-mark.webp" width="48" height="48" alt="">
+        <span class="wordmark__type"><strong>FORMARDEN</strong><small>Design &amp; Manufacturing</small></span>
+      </a>
+      <p>From idea to finished product.<br>Kunshan, Jiangsu, China</p>
+    </div>
+    <nav class="footer__group" aria-label="Manufacturing capabilities">
+      <strong>Capabilities</strong>
+      <a href="/cnc-manufacturing-preview/capabilities/design/">Design support</a>
+      <a href="/cnc-manufacturing-preview/capabilities/machining/">CNC machining</a>
+      <a href="/cnc-manufacturing-preview/capabilities/finishing/">Surface finishing</a>
+      <a href="/cnc-manufacturing-preview/capabilities/printing/">On-part printing</a>
+    </nav>
+    <nav class="footer__group" aria-label="Project resources">
+      <strong>Project resources</strong>
+      <a href="/cnc-manufacturing-preview/#ordering">How it works</a>
+      <a href="/cnc-manufacturing-preview/project-review/">Project review</a>
+      <a href="/cnc-manufacturing-preview/drawing-guide/">Drawing guide</a>
+      <a href="/cnc-manufacturing-preview/quote/">Request a quote</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
