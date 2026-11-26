@@ -15,8 +15,6 @@
 .cap .cap-kicker { display: block; margin-bottom: 1.3rem; color: var(--blue); font-size: .875rem; font-weight: 550; letter-spacing: .05em; }
 .cap .cap-hero-copy > p:not(.cap-kicker) { max-width: 33rem; margin-top: 1.5rem; font-size: clamp(1.075rem, 1.35vw, 1.2rem); line-height: 1.6; }
 .cap-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 1.9rem; }
-.cap .cap-text-link { color: var(--blue); font-weight: 550; text-decoration: underline; text-underline-offset: .3em; text-decoration-color: #abb6be; text-decoration-thickness: 1px; }
-.cap .cap-text-link:hover { text-decoration-color: currentColor; }
 .cap-hero figure { min-width: 0; }
 .cap-hero img, .design-visual svg { display: block; width: 100%; height: auto; border-radius: 1.4rem; }
 .cap-hero img.product-studio { aspect-ratio: 1.5; object-fit: contain; }
