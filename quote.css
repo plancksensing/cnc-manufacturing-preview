@@ -1,33 +1,34 @@
-.quote-page { background: var(--paper, #f5f7f8); color: var(--ink, #172b38); }
+.quote-page { background: var(--paper, #f6f7f8); color: var(--ink, #181a1c); }
 .quote-page [hidden] { display: none !important; }
-.quote-intro { background: var(--navy, #112b3c); color: #fff; }
-.quote-intro .wrap { padding-block: clamp(1.85rem, 4.2vw, 3.8rem); }
+.quote-intro { background: var(--paper, #f6f7f8); color: var(--ink, #181a1c); }
+.quote-intro .wrap { padding-block: clamp(3rem, 5.5vw, 5rem) clamp(1.5rem, 3vw, 2.5rem); }
 .quote-intro h1 {
-  margin: 0; color: inherit; font-size: clamp(2.55rem, 4.7vw, 4.6rem);
-  letter-spacing: -.052em; line-height: 1.04;
+  margin: 0; color: inherit; font-size: clamp(3rem, 5.4vw, 5.3rem); font-weight: 520;
+  letter-spacing: -.06em; line-height: 1.06;
 }
-.quote-intro p { max-width: 63ch; margin: .85rem 0 0; color: #d9e4e8; font-size: 1.08rem; line-height: 1.55; }
+.quote-intro p { max-width: 62ch; margin: 1.4rem 0 0; color: var(--muted); font-size: 1.125rem; line-height: 1.65; }
+.quote-intro .quote-kicker { margin: 0 0 1.15rem; color: var(--blue); font-size: .875rem; font-weight: 550; letter-spacing: .04em; }
 .quote-layout {
   display: grid; grid-template-columns: minmax(0, 2.4fr) minmax(15rem, 1fr);
   gap: clamp(1.5rem, 4vw, 4.5rem); align-items: start;
   padding-block: clamp(1.7rem, 3.5vw, 3.5rem) clamp(3rem, 6vw, 6rem);
 }
-#inquiry, .quote-confirmation { background: var(--white, white); border: 1px solid var(--line, #d5dfe3); border-radius: .45rem; }
-.quote-box, .quote-submit, .quote-confirmation { padding: clamp(1.15rem, 2.4vw, 2.25rem); }
-.quote-box { min-width: 0; margin: 0; border: 0; border-bottom: 1px solid var(--line, #d5dfe3); }
+#inquiry, .quote-confirmation { background: var(--white, white); border: 1px solid var(--line, #e0e4e7); border-radius: 1.5rem; }
+.quote-box, .quote-submit, .quote-confirmation { padding: clamp(1.35rem, 3.2vw, 3rem); }
+.quote-box { min-width: 0; margin: 0; border: 0; border-bottom: 1px solid var(--line, #e0e4e7); }
 .quote-box legend {
   float: left; display: flex; align-items: baseline; flex-wrap: wrap; gap: .65rem; width: 100%;
-  margin: 0 0 1.05rem; padding: 0; color: var(--ink, #172b38); font-size: clamp(1.25rem, 1.75vw, 1.5rem);
-  line-height: 1.2; font-weight: 650; letter-spacing: -.028em;
+  margin: 0 0 1.05rem; padding: 0; color: var(--ink, #181a1c); font-size: clamp(1.25rem, 1.75vw, 1.5rem);
+  line-height: 1.2; font-weight: 550; letter-spacing: -.035em;
 }
 .quote-box > legend + * { clear: both; }
-.quote-box small { margin-inline-start: .2em; color: var(--muted, #536978); font-size: .85rem; font-weight: 400; letter-spacing: 0; }
-.quote-drop { position: relative; border: 1.5px dashed #849ea9; border-radius: .35rem; background: #f5f7fc; }
-.quote-drop:hover, .quote-drop.is-over, .quote-drop:focus-within { border-color: var(--blue, #205bdf); background: #edf3ff; }
-.quote-drop:focus-within { outline: 2px solid var(--blue, #205bdf); outline-offset: 2px; }
+.quote-box small { margin-inline-start: .2em; color: var(--muted, #626970); font-size: .875rem; font-weight: 400; letter-spacing: 0; }
+.quote-drop { position: relative; border: 1px dashed #a9b4bd; border-radius: 1rem; background: #f8f9fa; transition: background-color .2s, border-color .2s; }
+.quote-drop:hover, .quote-drop.is-over, .quote-drop:focus-within { border-color: var(--blue, #315a78); background: #edf2f5; }
+.quote-drop:focus-within { outline: 2px solid var(--blue, #315a78); outline-offset: 2px; }
 .quote-drop label {
-  display: flex; flex-direction: column; align-items: center; gap: .7rem; padding: 1.55rem .85rem;
-  cursor: pointer; text-align: center; line-height: 1.35; color: var(--ink, #172b38);
+  display: flex; flex-direction: column; align-items: center; gap: .7rem; padding: 2.5rem 1rem;
+  cursor: pointer; text-align: center; line-height: 1.35; color: var(--ink, #181a1c);
 }
 .quote-drop input, .quote-sr {
   position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
@@ -36,15 +37,15 @@
 .quote-drop strong { font-size: 1.1rem; font-weight: 600; }
 .quote-file-icon {
   position: relative; display: block; width: 1.55rem; height: 1.9rem; margin-bottom: .15rem;
-  border: 2px solid currentColor; border-radius: 2px; color: var(--blue, #205bdf);
-  box-shadow: -.26rem .24rem 0 -.12rem #f5f7fc, -.26rem .24rem 0 -.02rem currentColor;
+  border: 2px solid currentColor; border-radius: 2px; color: var(--blue, #315a78);
+  box-shadow: -.26rem .24rem 0 -.12rem #f8f9fa, -.26rem .24rem 0 -.02rem currentColor;
 }
 .quote-file-icon::before { content: ""; position: absolute; top: .49rem; left: .27rem; width: .75rem; height: 2px; background: currentColor; box-shadow: 0 .36rem currentColor; }
 .quote-browse {
   display: inline-flex; align-items: center; justify-content: center; min-height: 2.5rem; padding: .4rem .95rem;
-  background: white; color: var(--navy, #112b3c); border: 1px solid #8ca2ac; border-radius: .25rem; font-weight: 650; font-size: .92rem;
+  background: white; color: var(--navy, #181a1c); border: 1px solid #c3cbd1; border-radius: 999px; font-weight: 650; font-size: .92rem;
 }
-.quote-help, .quote-formats, .quote-file-list small { color: var(--muted, #536978); font-size: .875rem; line-height: 1.45; }
+.quote-help, .quote-formats, .quote-file-list small { color: var(--muted, #626970); font-size: .875rem; line-height: 1.45; }
 .quote-help { margin: .65rem 0 0; }
 .quote-formats { margin-top: .35rem; }
 .quote-formats summary, .quote-specs summary { width: fit-content; cursor: pointer; padding-block: .3rem; }
@@ -54,58 +55,59 @@
 .quote-file-list li > span { flex: 1; min-width: 0; overflow-wrap: anywhere; font-size: .95rem; }
 .quote-file-list li small { white-space: nowrap; }
 .quote-file-list button, .quote-text-action {
-  min-height: 2.5rem; padding: .35rem; background: transparent; border: none; color: var(--blue, #205bdf);
+  min-height: 2.5rem; padding: .35rem; background: transparent; border: none; color: var(--blue, #315a78);
   font: inherit; font-size: .875rem; text-decoration: underline; text-underline-offset: .15em; cursor: pointer;
 }
 .quote-file-problem { margin-top: .8rem; border-left: 3px solid #9f4631; padding-left: .75rem; }
 .quote-file-problem p, #request-error { color: #923c2c; }
 .quote-file-problem p { margin: 0; font-size: .95rem; }
-.quote-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.2rem; }
+.quote-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem 1.25rem; }
 .quote-wide { grid-column: 1/-1; }
 .quote-field { display: grid; align-content: start; min-width: 0; gap: .4rem; }
-.quote-field label, .quote-label { color: var(--ink, #172b38); font-weight: 620; font-size: .94rem; line-height: 1.4; }
+.quote-field label, .quote-label { color: var(--ink, #181a1c); font-weight: 620; font-size: .94rem; line-height: 1.4; }
 .quote-field input, .quote-field select, .quote-field textarea {
-  width: 100%; min-width: 0; min-height: 2.85rem; padding: .55rem .65rem; border: 1px solid #9aadb6;
-  border-radius: .22rem; background: white; color: var(--ink, #172b38); font: inherit; font-size: 1rem;
+  width: 100%; min-width: 0; min-height: 3.1rem; padding: .7rem .85rem; border: 1px solid #b9c2c9;
+  border-radius: .6rem; background: white; color: var(--ink, #181a1c); font: inherit; font-size: 1rem;
 }
-.quote-field select { appearance: auto; }
+.quote-field select { appearance: none; padding-right: 2.5rem; background-image: linear-gradient(45deg, transparent 50%, #626970 50%), linear-gradient(135deg, #626970 50%, transparent 50%); background-position: calc(100% - 1.1rem) 50%, calc(100% - .8rem) 50%; background-size: .3rem .3rem; background-repeat: no-repeat; }
 .quote-field textarea { resize: vertical; }
 .quote-field ::placeholder { color: #687b85; opacity: 1; }
-.quote-page :is(button, summary, input, select, textarea):focus-visible { outline: 2px solid var(--blue, #205bdf); outline-offset: 2px; }
+.quote-page :is(button, summary, input, select, textarea):focus-visible { outline: 2px solid var(--blue, #315a78); outline-offset: 2px; }
 .quote-processes { margin-top: 1.2rem; }
 .quote-label { display: inline; margin: 0; }
 .quote-processes .quote-help { display: inline; margin-left: .25rem; }
 .quote-choices { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .5rem; }
-.quote-choices label { display: flex; align-items: center; gap: .45rem; min-height: 2.7rem; padding: .45rem .7rem; font-size: .9rem; border: 1px solid #9aadb6; border-radius: .25rem; cursor: pointer; }
-.quote-choices label:has(:checked) { border-color: var(--blue, #205bdf); background: #edf3ff; }
-.quote-choices input { flex: none; width: 1rem; height: 1rem; margin: 0; accent-color: var(--blue, #205bdf); }
-.quote-specs { margin-top: 1.25rem; padding-top: .8rem; border-top: 1px solid var(--line, #d5dfe3); }
-.quote-specs summary { color: var(--blue, #205bdf); font-size: .96rem; font-weight: 600; }
+.quote-choices label { display: flex; align-items: center; gap: .45rem; min-height: 2.7rem; padding: .65rem .85rem; font-size: .9rem; border: 1px solid #c0c8ce; border-radius: .65rem; cursor: pointer; }
+.quote-choices label:has(:checked) { border-color: var(--blue, #315a78); background: #edf2f5; }
+.quote-choices input { flex: none; width: 1rem; height: 1rem; margin: 0; accent-color: var(--blue, #315a78); }
+.quote-specs { margin-top: 1.25rem; padding-top: .8rem; border-top: 1px solid var(--line, #e0e4e7); }
+.quote-specs summary { color: var(--blue, #315a78); font-size: .96rem; font-weight: 600; }
 .quote-specs .quote-grid { margin-top: .7rem; }
-.quote-submit { padding-block: 1.25rem; }
-.quote-submit .button, .quote-confirmation .button { background: var(--blue, #205bdf); color: #fff; border: 0; cursor: pointer; }
+.quote-submit { padding-block: 1.6rem; }
+.quote-submit .button, .quote-confirmation .button { background: var(--ink, #181a1c); color: #fff; border: 0; cursor: pointer; }
 .quote-submit .button:disabled { cursor: wait; opacity: .65; }
 .quote-submit p { margin: .55rem 0 0; }
 .quote-submit p:empty { display: none; }
-.quote-submit progress { display: block; width: min(100%, 20rem); accent-color: var(--blue, #205bdf); margin-top: .5rem; }
+.quote-submit progress { display: block; width: min(100%, 20rem); accent-color: var(--blue, #315a78); margin-top: .5rem; }
 .quote-guide {
-  display: grid; gap: 1.45rem; padding-top: 1.1rem;
-  border-top: 3px solid var(--blue, #205bdf); line-height: 1.5;
+  display: grid; gap: 1.8rem; padding-top: .75rem; line-height: 1.6;
 }
-.quote-guide h2 { margin: 0; font-size: 1.3rem; font-weight: 650; line-height: 1.3; letter-spacing: -.025em; }
+.quote-guide h2 { margin: 0; font-size: 1.45rem; font-weight: 550; line-height: 1.3; letter-spacing: -.025em; }
 .quote-guide dl { margin: 1rem 0 0; }
-.quote-guide dt { font-weight: 620; color: var(--ink, #172b38); }
-.quote-guide dd, .quote-guide p { margin: .25rem 0 0; font-size: .95rem; color: var(--muted, #536978); }
-.quote-guide dd + dt, .quote-guide p + p { margin-top: .8rem; }
+.quote-guide dt { font-weight: 550; color: var(--ink, #181a1c); }
+.quote-guide dd, .quote-guide p { margin: .25rem 0 0; font-size: .95rem; color: var(--muted, #626970); }
+.quote-guide dd + dt, .quote-guide p + p { margin-top: 1.15rem; }
+.quote-guide .quote-guide-kicker { margin: 0 0 .8rem; color: var(--blue); font-size: .8125rem; letter-spacing: .04em; }
+.quote-guide .quote-payment-note { padding: 1rem; background: #e9eef1; border-radius: .75rem; color: #364b5c; font-size: .875rem; }
 .quote-guide-link { margin-top: .75rem; font-size: .95rem; }
-.quote-next { padding-block-start: 1.15rem; border-top: 1px solid var(--line, #d5dfe3); }
+.quote-next { padding-block-start: 1.15rem; border-top: 1px solid var(--line, #e0e4e7); }
 .quote-next h2 { margin-bottom: .7rem; }
 .quote-confirmation h2 { margin: 0; font-size: clamp(1.8rem, 3vw, 2.7rem); letter-spacing: -.045em; }
 .quote-confirmation p { margin: .75rem 0; }
 .quote-confirmation strong { display: block; overflow-wrap: anywhere; margin-block: .8rem 1.2rem; font-family: ui-monospace, monospace; }
 .quote-confirmation button { margin-top: .6rem; }
 @media (min-width: 1000px) and (min-height: 760px) {
-  .quote-guide { position: sticky; top: 1.5rem; }
+  .quote-guide { position: sticky; top: 7rem; }
 }
 @media (max-width: 780px) {
   .quote-layout { grid-template-columns: minmax(0, 1fr); }
@@ -119,3 +121,5 @@
   .quote-submit .button { width: 100%; }
   .quote-file-list li { flex-wrap: wrap; }
 }
+
+@media (prefers-reduced-motion: reduce) { .quote-drop { transition: none; } }

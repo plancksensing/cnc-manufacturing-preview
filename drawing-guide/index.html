@@ -7,36 +7,22 @@
   <link rel="stylesheet" href="/cnc-manufacturing-preview/preview.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Prepare CAD models, dimensioned drawings and print artwork for a multi-process quotation.">
-  <title>Drawing guide | FORMARDEN</title>
+  <title>Drawing guide | AURVANT</title>
   <link rel="stylesheet" href="/cnc-manufacturing-preview/site.css">
   <link rel="stylesheet" href="/cnc-manufacturing-preview/capability.css">
   <script defer src="/cnc-manufacturing-preview/nav.js"></script>
-  <link rel="icon" type="image/webp" href="/cnc-manufacturing-preview/assets/formarden-mark.webp">
+  <link rel="icon" type="image/webp" href="/cnc-manufacturing-preview/assets/aurvant-mark.webp">
 </head>
 <body>
   <aside class="preview-banner" aria-label="Preview status">Internal design preview — not accepting orders</aside>
   <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap site-header__bar">
-    <a class="wordmark" href="/cnc-manufacturing-preview/" aria-label="Formarden home">
-      <img class="wordmark__symbol" src="/cnc-manufacturing-preview/assets/formarden-mark.webp" width="48" height="48" alt="">
-      <span class="wordmark__type"><strong>FORMARDEN</strong><small>Design &amp; Manufacturing</small></span>
-    </a>
+    <a class="wordmark" href="/cnc-manufacturing-preview/" aria-label="AURVANT home"><img class="wordmark__symbol" src="/cnc-manufacturing-preview/assets/aurvant-mark.webp" width="40" height="40" alt=""><span class="wordmark__type">AURVANT</span></a>
     <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" hidden><span>Menu</span><span class="nav-toggle__icon" aria-hidden="true"></span></button>
     <nav id="primary-menu" class="site-nav" aria-label="Primary">
-      <details class="cap-menu">
-        <summary>Capabilities<span class="chevron" aria-hidden="true"></span></summary>
-        <div class="cap-menu__links">
-          <a href="/cnc-manufacturing-preview/#capabilities">All capabilities</a>
-          <a href="/cnc-manufacturing-preview/capabilities/design/">Design support</a>
-          <a href="/cnc-manufacturing-preview/capabilities/machining/">CNC machining</a>
-          <a href="/cnc-manufacturing-preview/capabilities/finishing/">Surface finishing</a>
-          <a href="/cnc-manufacturing-preview/capabilities/printing/">On-part printing</a>
-        </div>
-      </details>
-      <a href="/cnc-manufacturing-preview/project-review/">Project review</a>
-      <a href="/cnc-manufacturing-preview/drawing-guide/">Drawing guide</a>
-      <a class="button button--dark nav-quote" href="/cnc-manufacturing-preview/quote/">Request a quote</a>
+      <details class="cap-menu"><summary>Capabilities<span class="chevron" aria-hidden="true"></span></summary><div class="cap-menu__links"><a href="/cnc-manufacturing-preview/#capabilities">All capabilities</a><a href="/cnc-manufacturing-preview/capabilities/design/">Design support</a><a href="/cnc-manufacturing-preview/capabilities/machining/">CNC machining</a><a href="/cnc-manufacturing-preview/capabilities/finishing/">Surface finishing</a><a href="/cnc-manufacturing-preview/capabilities/printing/">On-part printing</a></div></details>
+      <a href="/cnc-manufacturing-preview/project-review/">Our approach</a><a href="/cnc-manufacturing-preview/drawing-guide/">Drawing guide</a><a class="button nav-quote" href="/cnc-manufacturing-preview/quote/">Start your project</a>
     </nav>
   </div>
 </header>
@@ -47,6 +33,7 @@
         <nav class="cap-crumb" aria-label="Breadcrumb"><a href="/cnc-manufacturing-preview/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Drawing guide</span></nav>
         <div class="cap-hero">
           <div class="cap-hero-copy">
+            <p class="cap-kicker">A clear brief makes a better beginning</p>
             <h1 id="page-title">Drawing guide</h1>
             <p>Share the files that describe your product and the quantity you need. If you are still developing the idea, a sketch or written brief is a useful starting point.</p>
             <div class="cap-actions">
@@ -54,12 +41,17 @@
               <a class="cap-text-link" href="#accepted-files">Accepted files</a>
             </div>
           </div>
-          <figure>
+          <figure data-reveal>
             <img src="/cnc-manufacturing-preview/assets/faceplate.webp" width="1200" height="800" alt="Bare, black-finished and printed versions of a control panel" fetchpriority="high">
             <figcaption>Illustrative rendering of one panel from machining to print.</figcaption>
           </figure>
         </div>
       </div>
+    </section>
+    <section class="wrap cap-intent" aria-label="Project essentials">
+      <div><h2>A starting point</h2><p>An idea, sketch or existing model can begin the conversation.</p></div>
+      <div><h2>One revision</h2><p>Keep the model, drawing and artwork aligned to the same product revision.</p></div>
+      <div><h2>The whole product</h2><p>Include finish and print requirements alongside the geometry, even for a first sample.</p></div>
     </section>
     <section id="accepted-files" class="wrap cap-work" aria-labelledby="files-title">
         <div>
@@ -75,7 +67,7 @@
           </table>
           <p class="cap-limits">Attach up to six files. Each file can be up to 10 MiB, with a combined limit of 20 MiB. For a larger package, describe it in your request and arrange a transfer with the team.</p>
         </div>
-        <aside class="cap-example">
+        <aside class="cap-example" data-reveal>
           <h3>Example file set</h3>
           <p>For a front panel with a machined opening, black finish and white graphics, use a consistent part number and revision.</p>
           <dl>
@@ -98,29 +90,8 @@
     </section>
   </main>
   <footer class="site-footer">
-  <div class="wrap footer__inner">
-    <div class="footer__identity">
-      <a class="wordmark" href="/cnc-manufacturing-preview/" aria-label="Formarden home">
-        <img class="wordmark__symbol" src="/cnc-manufacturing-preview/assets/formarden-mark.webp" width="48" height="48" alt="">
-        <span class="wordmark__type"><strong>FORMARDEN</strong><small>Design &amp; Manufacturing</small></span>
-      </a>
-      <p>From idea to finished product.<br>Kunshan, Jiangsu, China</p>
-    </div>
-    <nav class="footer__group" aria-label="Manufacturing capabilities">
-      <strong>Capabilities</strong>
-      <a href="/cnc-manufacturing-preview/capabilities/design/">Design support</a>
-      <a href="/cnc-manufacturing-preview/capabilities/machining/">CNC machining</a>
-      <a href="/cnc-manufacturing-preview/capabilities/finishing/">Surface finishing</a>
-      <a href="/cnc-manufacturing-preview/capabilities/printing/">On-part printing</a>
-    </nav>
-    <nav class="footer__group" aria-label="Project resources">
-      <strong>Project resources</strong>
-      <a href="/cnc-manufacturing-preview/#ordering">How it works</a>
-      <a href="/cnc-manufacturing-preview/project-review/">Project review</a>
-      <a href="/cnc-manufacturing-preview/drawing-guide/">Drawing guide</a>
-      <a href="/cnc-manufacturing-preview/quote/">Request a quote</a>
-    </nav>
-  </div>
+  <div class="wrap footer__inner"><div class="footer__identity"><a class="wordmark" href="/cnc-manufacturing-preview/" aria-label="AURVANT home"><img class="wordmark__symbol" src="/cnc-manufacturing-preview/assets/aurvant-mark.webp" width="40" height="40" alt=""><span class="wordmark__type">AURVANT</span></a><p>Design &amp; precision manufacturing.<br>Every detail. Every piece.</p></div><nav class="footer__group" aria-label="Manufacturing capabilities"><strong>Capabilities</strong><a href="/cnc-manufacturing-preview/capabilities/design/">Design support</a><a href="/cnc-manufacturing-preview/capabilities/machining/">CNC machining</a><a href="/cnc-manufacturing-preview/capabilities/finishing/">Surface finishing</a><a href="/cnc-manufacturing-preview/capabilities/printing/">On-part printing</a></nav><nav class="footer__group" aria-label="Project resources"><strong>Start a project</strong><a href="/cnc-manufacturing-preview/#ordering">How it works</a><a href="/cnc-manufacturing-preview/project-review/">Project review</a><a href="/cnc-manufacturing-preview/drawing-guide/">Drawing guide</a><a href="/cnc-manufacturing-preview/quote/">Request a quote</a></nav></div>
+  <div class="wrap footer__base"><span>Kunshan, China · Working with you worldwide.</span><span>AURVANT · From idea to finished product.</span></div>
 </footer>
 
 </body>
