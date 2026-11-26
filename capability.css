@@ -19,6 +19,7 @@
 .cap .cap-text-link:hover { text-decoration-color: currentColor; }
 .cap-hero figure { min-width: 0; }
 .cap-hero img, .design-visual svg { display: block; width: 100%; height: auto; border-radius: 1.4rem; }
+.cap-hero img.product-studio { aspect-ratio: 1.5; object-fit: contain; }
 .design-visual svg { border: 1px solid var(--line); }
 .cap-hero img { aspect-ratio: 1.18; object-fit: cover; background: #e9f1fc; }
 .cap figcaption { margin-top: .85rem; padding-inline: .15rem; color: var(--muted); font-size: .8125rem; line-height: 1.5; }
